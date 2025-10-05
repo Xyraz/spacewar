@@ -26,6 +26,9 @@ class Sprite(turtle.Turtle):
         self.goto(startx,starty)
         self.speed= 1
 
+    def move(self):
+        self.fd(self.speed)
+
 player = Sprite("triangle","white", 0,0)
 
 #game loop
