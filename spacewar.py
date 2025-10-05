@@ -29,7 +29,13 @@ class Sprite(turtle.Turtle):
     def move(self):
         self.fd(self.speed)
 
-player = Sprite("triangle","white", 0,0)
+    class Player(Sprite):
+        def __init__(seld, spriteshape,color,startx,starty):
+        Sprite.__init__(self,shape=spriteshape,color,startz,starty)
+        self.speed=4
+        self.lives=3
+
+player = Player("triangle","white", 0,0)
 
 #game loop
 while True:
